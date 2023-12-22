@@ -6,9 +6,9 @@
 
 typedef struct layer_s *layer_t;
 
-size_t layer_ds_size(void);
-int layer_dimension(layer_t);
 layer_t layer_init(int);
 void layer_free(layer_t);
+size_t layer_ds_size(void);
+int layer_dimension(layer_t);
 
 #endif

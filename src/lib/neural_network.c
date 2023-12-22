@@ -7,11 +7,6 @@ struct neural_network_s
     int layers_count;
 };
 
-size_t neural_network_size(void)
-{
-    return sizeof(struct neural_network_s);
-}
-
 neural_network_t neural_network_init(int *layers, int count)
 {
     int i;
@@ -46,7 +41,12 @@ void neural_network_free(neural_network_t neural_network)
     free(neural_network);
 }
 
-layer_t get_layer(neural_network_t neural_network, int id)
+size_t neural_network_ds_size(void)
+{
+    return sizeof(struct neural_network_s);
+}
+
+layer_t neural_network_get_layer(neural_network_t neural_network, int id)
 {
     if (id < 0 || id > neural_network->layers_count - 1)
     {

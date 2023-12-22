@@ -22,7 +22,7 @@ layer_t layer_init(int neurons)
 
     if (layer == 0)
     {
-        return 0;
+        return (layer_t)0;
     }
 
     layer->dimension = neurons;

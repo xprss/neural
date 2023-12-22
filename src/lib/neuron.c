@@ -12,7 +12,7 @@ neuron_t neuron_init() {
     neuron = (neuron_t) malloc(sizeof(struct neuron_s));
 
     if(neuron == 0) {
-        return 0;
+        return (neuron_t)0;
     }
 
     return neuron;
@@ -29,4 +29,8 @@ int neuron_get_layer_position(neuron_t neuron) {
 
 float (*neuron_get_activation_function(neuron_t neuron))(float) {
     return neuron->activation_function;
+}
+
+size_t neuron_ds_size(void) {
+    return sizeof(struct neuron_s);
 }
