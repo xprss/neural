@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.cpp": "cpp",
+        "*.c": "c",
+        "neuron.h": "c",
+        "cstdlib": "c",
+        "*.tcc": "c",
+        "memory": "c",
+        "new": "c",
+        "neural_network.h": "c",
+        "function.h": "c"
+    }
+}
