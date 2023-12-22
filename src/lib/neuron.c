@@ -24,7 +24,7 @@ void neuron_free(neuron_t neuron) {
 
 
 int neuron_get_layer_position(neuron_t neuron) {
-    return neuron->activation_function;
+    return neuron->layer_position;
 }
 
 float (*neuron_get_activation_function(neuron_t neuron))(float) {
