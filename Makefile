@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -O0
 
-BIN_NAME = neural
+BIN_NAME = neuralmain
 
 SRC_DIR = src
 LIB_DIR = $(SRC_DIR)/lib
